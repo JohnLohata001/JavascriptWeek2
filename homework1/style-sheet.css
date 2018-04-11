@@ -1,0 +1,242 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family:Arial, Helvetica, sans-serif;
+}
+body {
+    background: rgba(0, 0, 0, 0.2);
+}
+.container{
+    width: 93%;
+    min-height: 600px;
+    margin: auto;
+   
+}
+header{
+    width: auto;
+    min-height: 150px;
+    background: linear-gradient(170deg, black, green, blue, white, red, yellow, black);
+    margin-top: 10px;
+}
+
+.title-header {
+    height: 55px;
+    padding-top: 20px;
+}
+h2{
+    font-size: 30px;
+    color:white;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    text-shadow: #000 3px 0px 0;
+    font-size: 50px;
+}
+/*---------------------------------------------- menu -----------------------------------------------------------*/
+menu {
+
+    position: relative;
+    background: #000;
+    top: 20px;
+    height: 40px;
+    padding: 10px;
+}
+
+.main-menu{
+    margin: 10px 0 10;
+    display: none;
+     cursor: pointer;
+}
+.other-menu{
+    width: 30px;
+    height: 2px;
+    background: white;
+    margin: 5px;
+   
+
+}
+
+menu ul {
+    list-style: none; 
+    background: #000;
+    color: #FFF;   
+    display: flex;
+}
+
+menu ul li{
+    margin: 0 15px;
+    padding-left: 40px; 
+    text-align: center;
+   
+}
+
+menu ul li:hover {
+    background: tomato;
+    pointer-events: fill;
+}
+
+/*---------------------------------------------- first row ----------------------------------------------------- */
+
+.boxfirst{
+    display: flex;
+    width: auto;
+    margin: 5px auto 5px auto;
+    justify-content: space-between;
+
+}
+
+.box-first {
+    flex-basis: 30%;
+    padding: 20px;
+    min-height: 200px;
+    margin: 5px 5px 0 0 ;
+    background: rgba(0, 0, 0, 0.4);
+}
+
+.box-first:nth-child(1){
+    background: red; 
+     /* background-image: url(images/best_freind.png);*/
+    background-size: cover;
+}
+.box-first:nth-child(2){background: green;}
+.box-first:nth-child(3){background: yellow; margin-left: 0;}
+
+
+.first-one {
+    flex: 2;
+  
+}
+.first-two {
+    flex: 1;
+}
+
+.first-tree{
+    flex: 1;
+    
+}
+
+/*------------------------------second row--------------------------------------------------- */
+
+.secondbox {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+
+}
+.box-second {
+    flex-basis: 30%;
+    padding: 20px;
+    margin-bottom: 5px;
+    min-height: 200px;
+    margin: 0 5px 5px;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+.box-second:nth-child(1){background:rgba(130, 158, 2, 0.5);}
+.box-second:nth-child(2){background: rgba(32, 4, 155, 0.5);}
+.box-second:nth-child(3){background: rgba(4, 189, 75, 0.5);}
+.box-second:nth-child(4){background: rgba(109, 2, 2, 0.5);}
+
+
+/*------------------------------third row--------------------------------------------------- */
+
+.thirdbox {
+    display: flex;
+    width: auto;
+    justify-content: space-between;
+
+}
+.box-third {
+    flex-basis: 30%;
+    box-sizing: border-box;
+    padding: 20px;
+    margin: 0 5px 5px;
+    min-height: 200px;
+    background: rgba(0, 0, 0, 0.4);
+    
+}
+
+.box-third:nth-child(1){background:rgba(255, 158, 2, 0.5);}
+.box-third:nth-child(2){background: rgba(2, 0, 10, 0.5);}
+.box-third:nth-child(3){background: rgba(30, 29, 80, 0.5);}
+.box-third:nth-child(4){background: rgba(192, 2, 2, 0.5);}
+
+/* ----------------------------footer --------------------------------------*/
+
+footer{
+    width: auto;
+    min-height: 100px;
+    background: rgba(0, 0, 0, 0.5);
+    clear: both;
+  
+}
+
+@media screen and (max-width:750px){
+    .container{
+        overflow: hidden;
+    }
+    menu ul{
+        display: none;
+    }
+
+    menu {
+        position: relative;
+        background: #000;
+        top: 20px;
+        height: 50px;
+        padding: 0px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+    .main-menu{
+        margin: 10px 0 10px;
+        display: block;
+        cursor: pointer;
+        padding: 3px;
+    
+    }
+/* --------------------- first box -------------------------------*/
+    .boxfirst {
+        display: flex;
+        flex-direction: column;
+    
+   
+    }
+
+    menu ul{
+        display: block;
+    }
+
+    menu ul li{
+        display: none;
+        width: auto;
+        padding: 10px 0;
+        border-bottom: solid 1px rgba(255, 255, 255, 0.3);
+    }
+/* --------------------- second box -------------------------------*/
+    .secondbox{
+        flex-direction: column;
+    }
+
+/* --------------------- third box -------------------------------*/
+
+.thirdbox {
+    display: flex;
+    flex-direction: column;
+
+}
+
+
+}
+
+@media screen and (max-width:600px){
+    menu ul{
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+
