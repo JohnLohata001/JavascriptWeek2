@@ -1,0 +1,265 @@
+body{
+		font-family:"RO Sans",Calibri,sans-serif;;
+		padding:0;
+		margin:0;
+		background-color:#fdfdfd;
+    }
+.maim-web{
+    width: 100%;
+    height: 1600px;
+  
+}
+.header{
+    min-height: 150px;
+    width: 100%;
+}
+.header-top{
+    height: 120px;
+}
+.header-lower{
+    min-height: 70px;
+    font-family: Arial, Helvetica, sans-serif;
+    background: #01689b;
+    display: flex;
+}
+.header-lower ul{
+    flex-basis: 50%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 2% 0 2%;
+    line-height: 40px;
+}
+.header-lower ul .font-home {
+    font-weight: bold;
+    color: white;
+    font-size: 20px;
+    margin-left: 7%;
+    
+    
+}
+.header-lower ul li a{
+    text-decoration: none;
+    color: white;
+    font-weight: none;
+    padding: 10px;
+    
+}
+/* begin of banner */
+
+.banner{
+    width: 100%;
+    height: 260px;
+    background: black;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+#image-wrap{
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 10;
+}
+#text-search{
+    height: 20px;
+    padding: 5px;
+    width: 400px;
+    margin-left: 200px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.text-menu {
+    padding: 30px;  
+    display: flex;
+    position: relative;
+    top: -270px;
+    z-index: 10;
+}
+.text-menu a{
+    text-decoration: none;
+    padding-left: 20px;
+}
+.text-menu ul li{
+   list-style: square;
+}
+.text-menu ul li:last-child{
+   list-style: none;
+}
+.menu-one{
+    background: white;
+    width: 100%;
+    min-height: 100px;
+   padding: 20px;
+   position: relative;
+   left: 10%;
+}
+.text-menu ul{
+    padding: 0;
+    margin: 0;
+    list-style:none;  
+    flex-basis: 45%;  
+}
+
+.inside-text{
+    padding: 20px 20px 20px 50px;;
+    background-color: #f3f3f3;
+}
+.inside-text ul{
+    display:flex;
+    list-style: none;
+    min-height: 400px;
+    flex-wrap: wrap;
+    padding: 0;
+    margin: 0;  
+}
+.inside-text ul li{
+    flex-basis: 23%;
+    min-width: 300px;
+    height: 200px;
+}
+.inside-text ul li h1{
+    font-size: 25px;
+    color: #01689b;
+
+}
+.inside-text ul p{
+    font-size: 18px;
+}
+
+h2{
+    color: #01689b;
+}
+.photo-text{
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    margin: auto;
+    overflow: hidden;
+    padding-top: 70px;
+}
+.line{
+    width: 90%;
+    margin-top: 60px;
+}
+.other-text {
+    width: 90%;
+    margin: auto;
+}
+.other-text ul {
+    display: flex;
+    list-style: none;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0;
+    margin: 0;
+}
+.other-text ul li{
+    flex-basis: 30%;    
+}
+.other-text #theme{
+    font-size: 30px;
+    padding: 0;
+    margin: 0;
+    font-weight: bold;
+}
+.inside-footer{
+    min-height: 200px;
+    background-color: steelblue;
+}
+.inside-footer {
+    display: flex;
+    margin-bottom: 30px;
+}
+.inside-footer ul{
+    list-style: none;
+    color: white;
+    flex-basis: 45%;
+}
+
+footer .inside-footer ul:nth-of-type(1) {flex-grow: 1;}
+footer .inside-footer ul:nth-of-type(2) {flex-grow: 3;}
+footer .inside-footer ul:nth-of-type(3) {flex-grow: 1;}
+
+.inside-footer ul h2{
+   
+    color: white;
+}
+.the-end-footer ul{
+    list-style: none;
+    padding: 0;
+    margin: 0 auto;
+    width: 50%;
+    margin-bottom: 10px;
+}
+.the-end-footer ul li{
+   display: inline-block;  
+   margin: auto; 
+   padding: 10px;
+   margin-left: 10px;
+   margin-bottom: 40px;
+   border: solid 1px rgba(46, 129, 253, 0.5);
+   cursor: pointer;
+   color: #01689b
+}
+
+.menu-cash span{
+    border: solid 1px white;
+    height: 1px;
+    width: 30px;
+    display: none;
+    margin: 5px;
+    background: white;
+   position: relative;
+   left: 230px;
+}
+@media screen and (max-width:700px){
+    .header-lower ul{
+        display:block;
+    }
+    .header-lower ul li{
+        display:none;
+    }
+    #text-search{
+        position: absolute;
+        top: -35px;
+        left:-30%;
+        z-index: 1;
+        width: 80%;
+    }
+    .photo-text{
+        display: block;
+    }
+    #picture{
+        width: 100%;
+    }
+
+    .menu-one{
+        width: 100%;
+        margin-left: -10px;
+        margin: 0;
+    }
+    .text-menu{
+        display: block;
+        width: 100%;
+        position: relative;
+       
+    }
+
+    .other-text ul{
+        display: block;
+        padding-bottom: 50px;
+    }
+    .menu-cash span{
+        border: solid 1px white;
+        height: 1px;
+        width: 30px;
+        display: block;
+        margin: 5px;
+        background: white;
+        position: relative;
+        left: 450%;
+    }
+
+}
