@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Javascrript code</title>
+    <style>
+        body {
+            background: rgba(0, 0, 0, 0.1);
+            padding: 0;
+            margin: 0;
+        }
+
+        .header {
+            height: 160px;
+            width: 100%;
+            background: red;
+            overflow: hidden;
+            z-index: 1;
+            border-bottom: solid 5px black;
+        }
+
+        .header1 {
+            position: relative;
+            left: -100px;
+            top: 10px;
+            width: 600px;
+            height: 80px;
+            transform: skew(50deg);
+            background: black;
+        }
+
+        .header ul {
+            display: flex;
+            list-style: none;
+            position: relative;
+            top: 60px;
+            z-index: 5;
+
+
+        }
+
+        .header ul li {
+            padding-right: 40px;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+
+        }
+
+        .header ul li a {
+            text-decoration: none;
+            color: white;
+
+        }
+
+
+        .header h1 {
+            float: right;
+            color: white;
+            position: absolute;
+            left: 50px;
+            border-bottom: solid 2px red;
+            color: rgb(246, 247, 252);
+            z-index: 2;
+            text-shadow: 2px 1px 0px rgb(4, 47, 189);
+            top: 40px;
+            text-transform: uppercase;
+            font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+        }
+
+        .bodSide {
+            width: 90%;
+            min-height: 400px;
+            margin: auto;
+        }
+
+        .toolBar {
+            height: 50px;
+            width: 100%;
+            background: white;
+            border-top: solid 10px black;
+            position: relative;
+            top: -25px;
+            z-index: 20;
+        }
+    </style>
+</head>
+
+
+<body>
+    <div class="header">
+        <!--h1>This the way to success the live</h1-->
+        <ul>
+            <li>
+                <a href="#">Home</a>
+            </li>
+            <li>
+                <a href="#">Objectifs</a>
+            </li>
+            <li>
+                <a href="#">Divise</a>
+            </li>
+            <li>
+                <a href="#">Contacts</a>
+            </li>
+        </ul>
+        <div class="header1">
+
+        </div>
+        <div class="toolBar"></div>
+    </div>
+
+    <div class="bodSide">
+        <div class="bannerSide">
+
+        </div>
+        <script>
+            ellipse(50, 200, 200, 200);
+        </script>
+    </div>
+
+
+</body>
+
+</html>
