@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="style.css" />
+    <!-- <script src="main.js"></script> -->
+</head>
+
+<body>
+    <div id="container"></div>
+    <script>
+
+        const data = [{
+
+            id: 1,
+            title: "Javascript",
+            language: "English",
+            author: "Socrat",
+            picture: "the first picture",
+            src: "./1.png"
+        },
+        {
+
+            id: 2,
+            title: "HTML",
+            language: "English",
+            author: "Socrat",
+            picture: "the second",
+            src: "./2.jpg"
+        },
+        {
+
+            id: 3,
+            title: "Css",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./3.jpg"
+        }, {
+
+            id: 4,
+            title: "PHP",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./4.jpg"
+        }, {
+
+            id: 5,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./5.png"
+        }, {
+
+            id: 6,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./6.png"
+        }, {
+
+            id: 7,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./7.jpg"
+        }, {
+
+            id: 8,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./8.jpg"
+        }, {
+
+            id: 9,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./9.jpg"
+        }, {
+
+            id: 10,
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./10.jpg"
+        }];
+
+        // ================= this the header ====================================
+
+        let upHead = document.createElement('div');
+        upHead.id = "header";
+        let h = document.createElement('h1');
+        h.id = "h1";
+        h.textContent = "My JAVASCRIPT EXERCISE";
+        upHead.appendChild(h);
+        document.body.appendChild(upHead);
+
+        //  ================== this is the container =================================  
+
+        let containerDiv = document.getElementById('container');
+        containerDiv.id = "idContainer";
+        // ====================== This is the div inside of the div=====================
+
+        let favBooksDiv = document.createElement('div');
+        favBooksDiv.id = "favBooksDiv";
+        containerDiv.appendChild(favBooksDiv);
+
+        //======== This function will take ten images and their details ================
+
+        function printTitle(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let bookDiv = document.createElement('div');
+                bookDiv.innerHTML = `
+                    <div class="imgDiv">
+                        <img src="${arr[i].src}"></img>   
+                    </div>
+                    <div class="detailsDiv">
+                        Book Title: ${arr[i].title}<br>
+                        Book Language: ${arr[i].language}<br>
+                        Author: ${arr[i].author}<br>
+                    </div>
+                `
+                console.log(bookDiv);
+                favBooksDiv.appendChild(bookDiv);
+            }
+
+        }
+        printTitle(data)
+    //======================= this is the end of all ===========================
+    </script>
+</body>
+
+</html>
