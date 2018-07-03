@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Page Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css" />
+    <script src="home5.js"></script>
+</head>
+
+<body>
+    <div id="myNewTitle"></div>
+    <div id="con"></div>
+    <script>
+
+        const data = [{
+            costas:
+                id = "1",
+            title: "Javascript",
+            language: "English",
+            author: "Socrat",
+            picture: "the first picture",
+            src: "./1.png"
+        },
+        {
+            chris:
+                id = "2",
+            title: "HTML",
+            language: "English",
+            author: "Socrat",
+            picture: "the second",
+            src: "./2.jpg"
+        },
+        {
+            damien:
+                id = "3",
+            title: "Css",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./3.jpg"
+        }, {
+            Zohil:
+                id = "4",
+            title: "PHP",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./4.jpg"
+        }, {
+            Brondel:
+                id = "5",
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./5.png"
+        }, {
+            rose:
+                id = "6",
+            title: "Vs CODE",
+            language: "English",
+            author: "Socrat",
+            picture: "the second picture",
+            src: "./6.png"
+        }];
+
+        // let myNewTi = document.getElementById('myNewTitle');
+        let myNewTi = document.createElement('div');
+        myNewTi.textContent = "THIS MY HOMEWROK ";
+        document.body.appendChild(myNewTi);
+        myNewTi.style.color = "white";
+        myNewTi.style.textAlign = "center";
+        myNewTi.style.paddingTop = "30px";
+        myNewTi.style.width = "100%";
+        myNewTi.style.height = "60px";
+        myNewTi.style.fontSize = "25px";
+        myNewTi.style.borderBottom = "solid 2px red";
+        myNewTi.style.background = "black";
+        myNewTi.style.position = "absolute";
+        myNewTi.style.fontFamily = "arial";
+        myNewTi.style.top = "0px";
+        myNewTi.style.right = "0";
+
+
+
+
+
+        let page = document.getElementById('con');
+        function printTitle(arr) {
+            for (let i = 0; i < arr.length; i++) {
+
+                // page.append(arr[i]);
+                // let br = document.createElement('br');
+                let img = document.createElement('img');
+                img.src = arr[i].src;
+                img.style.width = "300px";
+                img.style.height = "200px";
+                img.style.border = "solid 2px red";
+                img.style.padding = "2px";
+                page.style.width = "70%";
+                page.style.margin = " auto";
+                page.style.marginTop = "100px";
+                // page.appendChild(br);
+                page.append(img);
+
+
+
+
+            }
+            document.write("<br/>");
+        }
+        printTitle(data)
+
+    </script>
+
+</body>
+
+</html>
