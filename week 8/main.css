@@ -1,0 +1,49 @@
+body{
+    
+    padding: 10px;
+    margin: 55px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+#inputId
+{
+  width: 50%;
+  padding: 5px;
+  font-family: arial;
+  border-radius: 5px;
+  border: solid 1px silver;
+  font-size: 20px;
+}
+
+button{
+  width:150px; 
+  height: 40px;
+  line-height: 2px;
+  position: absolute;
+  margin-top: 10px;
+  
+}
+.mybutton{
+ margin-left: 10px;
+}
+#container, #showData{
+  min-height: 100px;
+}
+#btn{
+  margin-left:-150px; 
+  
+}
+
+.blondGoogle{
+  font-size: 30px;
+  color: red;
+}
+#output{
+  font-size: 25px;
+  text-align: justify;
+}
+
+ /* <h3>Full Result of Search:  */
+ /* </h3>${xhr.responseText} */
